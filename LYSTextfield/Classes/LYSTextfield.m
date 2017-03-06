@@ -50,7 +50,6 @@
     
     self.mSpacer = @" ";
     
-    self.mMaxLimit = MAXFLOAT;
     
     [self addTarget:self action:@selector(changedTextfield:) forControlEvents:UIControlEventEditingChanged];
     
@@ -60,7 +59,7 @@
 - (void)changedTextfield:(UITextField *)textField {
     
     //极值的判断
-    if (textField.text.length > self.mMaxLimit) {
+    if (self.mMaxLimit && textField.text.length > self.mMaxLimit) {
         [textField setText:[textField.text substringToIndex:self.mMaxLimit]];
         return;
     }
