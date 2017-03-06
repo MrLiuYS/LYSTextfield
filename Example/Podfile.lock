@@ -1,0 +1,16 @@
+PODS:
+  - LYSTextfield (0.1.0)
+
+DEPENDENCIES:
+  - LYSTextfield (from `../`)
+
+EXTERNAL SOURCES:
+  LYSTextfield:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LYSTextfield: f64eb9bcec873aaddbd7bb71dcee4977deb5a342
+
+PODFILE CHECKSUM: 698a0a33f8aedd6702a61c9c348acb22d37ad38a
+
+COCOAPODS: 1.1.1
