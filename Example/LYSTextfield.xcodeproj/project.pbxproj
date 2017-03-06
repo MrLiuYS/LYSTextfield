@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DE66C4E1E6D1FC5000A6397 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0DE66C4A1E6D1FC5000A6397 /* .gitkeep */; };
+		0DE66C4F1E6D1FC5000A6397 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0DE66C4C1E6D1FC5000A6397 /* .gitkeep */; };
+		0DE66C501E6D1FC5000A6397 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE66C4D1E6D1FC5000A6397 /* ReplaceMe.m */; };
+		0DE66C531E6D1FE7000A6397 /* LYSTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE66C521E6D1FE7000A6397 /* LYSTextfield.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,7 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1BB1D24445FBFCEBC923A4B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0DE66C4A1E6D1FC5000A6397 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0DE66C4C1E6D1FC5000A6397 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0DE66C4D1E6D1FC5000A6397 /* ReplaceMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		0DE66C511E6D1FE7000A6397 /* LYSTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSTextfield.h; sourceTree = "<group>"; };
+		0DE66C521E6D1FE7000A6397 /* LYSTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSTextfield.m; sourceTree = "<group>"; };
+		1BB1D24445FBFCEBC923A4B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3235E1BB5F46E7AFA8A1EA06 /* Pods_LYSTextfield_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYSTextfield_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34217C310073BEEFF2A6FC68 /* Pods_LYSTextfield_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYSTextfield_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		388C7FEBCAACDCC0510C9943 /* Pods-LYSTextfield_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYSTextfield_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYSTextfield_Example/Pods-LYSTextfield_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -64,9 +73,9 @@
 		6D784230751EB804270C81D1 /* Pods-LYSTextfield_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYSTextfield_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYSTextfield_Tests/Pods-LYSTextfield_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B99B0C7E50BB185F165A35CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B99B0C7E50BB185F165A35CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C0F10021AE38324B1074A083 /* Pods-LYSTextfield_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYSTextfield_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYSTextfield_Example/Pods-LYSTextfield_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DE72C46D8863A25B7C1FB68D /* LYSTextfield.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LYSTextfield.podspec; path = ../LYSTextfield.podspec; sourceTree = "<group>"; };
+		DE72C46D8863A25B7C1FB68D /* LYSTextfield.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LYSTextfield.podspec; path = ../LYSTextfield.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +104,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DE66C481E6D1FC5000A6397 /* LYSTextfield */ = {
+			isa = PBXGroup;
+			children = (
+				0DE66C491E6D1FC5000A6397 /* Assets */,
+				0DE66C4B1E6D1FC5000A6397 /* Classes */,
+			);
+			name = LYSTextfield;
+			path = ../LYSTextfield;
+			sourceTree = "<group>";
+		};
+		0DE66C491E6D1FC5000A6397 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0DE66C4A1E6D1FC5000A6397 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0DE66C4B1E6D1FC5000A6397 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0DE66C4C1E6D1FC5000A6397 /* .gitkeep */,
+				0DE66C4D1E6D1FC5000A6397 /* ReplaceMe.m */,
+				0DE66C511E6D1FE7000A6397 /* LYSTextfield.h */,
+				0DE66C521E6D1FE7000A6397 /* LYSTextfield.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				0DE66C481E6D1FC5000A6397 /* LYSTextfield */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for LYSTextfield */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -281,6 +320,8 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				0DE66C4E1E6D1FC5000A6397 /* .gitkeep in Resources */,
+				0DE66C4F1E6D1FC5000A6397 /* .gitkeep in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -394,9 +435,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE66C501E6D1FC5000A6397 /* ReplaceMe.m in Sources */,
 				6003F59E195388D20070C39A /* LYSAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* LYSViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				0DE66C531E6D1FE7000A6397 /* LYSTextfield.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
