@@ -20,6 +20,26 @@ it, simply add the following line to your Podfile:
 pod "LYSTextfield"
 ```
 
+
+最多能输入
+
+```
+textfield.maxLimit(50);
+```
+
+间隔符:第三位加空格. 之后的第四位加空格.之后的第五位加空格
+
+```
+textfield.spacer(@" ").spacerNum(@(3)).spacerNum(@(4)).spacerNum(@(5));
+```
+
+清空之前添加的间隔
+
+```
+textfield.removeSpacerNums();
+```
+
+
 ## Author
 
 3050700400@qq.com, mrliuys
@@ -27,3 +47,5 @@ pod "LYSTextfield"
 ## License
 
 LYSTextfield is available under the MIT license. See the LICENSE file for more info.
+
+
