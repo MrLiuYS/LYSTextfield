@@ -10,6 +10,10 @@
 
 @interface LYSTextfield : UITextField
 
+/**
+ 开启间隔功能
+ */
+- (LYSTextfield *(^)(BOOL isSpacer)) isSpacer;
 
 /**
  间隔符,只能有一个字符

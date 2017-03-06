@@ -50,30 +50,44 @@
     
     self.mSpacer = @" ";
     
-    
-    [self addTarget:self action:@selector(changedTextfield:) forControlEvents:UIControlEventEditingChanged];
-    
+}
+
+- (LYSTextfield *(^)(BOOL isSpacer)) isSpacer {
+    return ^id(BOOL isSpacer){
+        
+        [self removeTarget:self action:@selector(changedTextfield:) forControlEvents:UIControlEventEditingChanged];
+        
+        if (isSpacer) {
+            [self addTarget:self action:@selector(changedTextfield:) forControlEvents:UIControlEventEditingChanged];
+        }
+        
+        return self;
+    };
 }
 
 
 - (void)changedTextfield:(UITextField *)textField {
     
     //极值的判断
-    if (self.mMaxLimit && textField.text.length > self.mMaxLimit) {
+    
+    NSString * string = [textField.text stringByReplacingOccurrencesOfString:self.mSpacer withString:@""];
+    
+    if (self.mMaxLimit && string.length > self.mMaxLimit) {
         [textField setText:[textField.text substringToIndex:self.mMaxLimit]];
         return;
     }
     
-    
-    NSUInteger targetCursorPostion = [textField offsetFromPosition:textField.beginningOfDocument toPosition:textField.selectedTextRange.start];
-    NSString *phoneNumberWithoutSpaces = [self removeNonDigits:textField.text andPreserveCursorPosition:&targetCursorPostion];
-    
-    
-    NSString *phoneNumberWithSpaces = [self insertSpacesEveryFourDigitsIntoString:phoneNumberWithoutSpaces andPreserveCursorPosition:&targetCursorPostion];
-    
-    textField.text = phoneNumberWithSpaces;
-    UITextPosition *targetPostion = [textField positionFromPosition:textField.beginningOfDocument offset:targetCursorPostion];
-    [textField setSelectedTextRange:[textField textRangeFromPosition:targetPostion toPosition:targetPostion]];
+    if (self.mSpacerNums.count > 0) {
+        NSUInteger targetCursorPostion = [textField offsetFromPosition:textField.beginningOfDocument toPosition:textField.selectedTextRange.start];
+        NSString *phoneNumberWithoutSpaces = [self removeNonDigits:textField.text andPreserveCursorPosition:&targetCursorPostion];
+        
+        
+        NSString *phoneNumberWithSpaces = [self insertSpacesEveryFourDigitsIntoString:phoneNumberWithoutSpaces andPreserveCursorPosition:&targetCursorPostion];
+        
+        textField.text = phoneNumberWithSpaces;
+        UITextPosition *targetPostion = [textField positionFromPosition:textField.beginningOfDocument offset:targetCursorPostion];
+        [textField setSelectedTextRange:[textField textRangeFromPosition:targetPostion toPosition:targetPostion]];
+    }
     
 }
 
