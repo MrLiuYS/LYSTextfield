@@ -20,23 +20,30 @@ it, simply add the following line to your Podfile:
 pod "LYSTextfield"
 ```
 
+开启间隔功能,默认关闭
+
+```
+.isSpacer(YES)
+
+```
+
 
 最多能输入
 
 ```
-textfield.maxLimit(50);
+.maxLimit(50);
 ```
 
 间隔符:第三位加空格. 之后的第四位加空格.之后的第五位加空格
 
 ```
-textfield.spacer(@" ").spacerNum(@(3)).spacerNum(@(4)).spacerNum(@(5));
+.spacer(@" ").spacerNum(@(3)).spacerNum(@(4)).spacerNum(@(5));
 ```
 
 清空之前添加的间隔
 
 ```
-textfield.removeSpacerNums();
+.removeSpacerNums();
 ```
 
 
